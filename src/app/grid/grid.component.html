@@ -1,0 +1,30 @@
+<ul class="row">
+  <li class="col-sm-3" *ngFor="let i of Innovators">
+
+    {{i.name}} , {{i.power}}</li>
+
+</ul>
+
+<ul>
+
+<li *ngIf="height > 5">
+<i> Tall </i>
+</li>
+</ul>
+<div [ngStyle]="
+{
+color: 'RED' ,
+background: '#000000'
+}
+">
+demo
+</div>
+<div [ngStyle]="{
+'color': getColor()
+}">
+Coloring
+</div>
+<input [(ngModel)]=
+"name"
+>
+<h1>{{name}}</h1>
